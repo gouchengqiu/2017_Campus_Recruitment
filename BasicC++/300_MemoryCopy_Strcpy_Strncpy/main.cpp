@@ -3,13 +3,13 @@
 int main()
 {
 	//Case1:
-	//char SourceStr[] = "123456";
-	//char DstStr[4]; 
-	//char* pFirst = strcpy(DstStr, SourceStr);
+	char SourceStr[] = "123456";
+	char DstStr[6]; 
+	char* pFirst = strcpy(DstStr, SourceStr);
 
-	//std::cout << DstStr;
-	//std::cout << std::endl;
-	//std::cout << pFirst;
+	std::cout << DstStr;
+	std::cout << std::endl;
+	std::cout << pFirst;
 
 	//Case2:
 	//char SourceStr[] = "123456";
@@ -18,11 +18,11 @@ int main()
 	//std::cout << DstStr2;
 
 	//Question:
-	char StrArray[10];
-	char* pStr1 = "1234567890";
-	strcpy(StrArray, pStr1);
+	//char StrArray[10];
+	//char* pStr1 = "1234567890";
+	//strcpy(StrArray, pStr1);
 
-	std::cout << StrArray;
+	//std::cout << StrArray;
 
 	return 0;
 }
