@@ -1,3 +1,5 @@
+//https://www.nowcoder.com/test/question/done?tid=9944519&qid=112726#summary
+
 #include <iostream>
 
 void sortArray(int vData[], int vLength, int vResult[])
@@ -5,7 +7,8 @@ void sortArray(int vData[], int vLength, int vResult[])
 	if (vData == NULL || vLength <= 0)
 		return;
 
-	int IndexA = vLength - 1;
+	//Case1: 我的做法   引入bool变量来记录第二轮到底是访问0号还是1号，有点笨了。  别人的做法就很简洁。
+	/*int IndexA = vLength - 1;
 	int IndexB = 0;
 	bool IsFirstVisited = false;
 
@@ -38,6 +41,23 @@ void sortArray(int vData[], int vLength, int vResult[])
 		vResult[IndexB] = vData[IndexA];
 		IndexA += 2;
 		IndexB++;
+	}*/
+
+	//Case2:借鉴别人的做法
+
+	int IndexA = vLength - 1;
+	int IndexB = 0;
+	while (IndexA >= 0)   // 前一半从最后一个数开始以2为步长递减
+	{
+		vResult[IndexB++] = vData[IndexA];
+		IndexA -= 2;
+	}
+
+	IndexA = vLength % 2;
+	while (IndexA < vLength - 1)  // 后一半根据整数个数的奇偶，分别从第二个或第一个数开始以2为步长递增
+	{
+		vResult[IndexB++] = vData[IndexA];
+		IndexA += 2; 
 	}
 }
 

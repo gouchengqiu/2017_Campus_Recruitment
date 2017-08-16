@@ -13,6 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2EADE3C4-4130-40F0-B54C-A8137F35E8F9}</ProjectGuid>
     <RootNamespace>网易内推笔试03</RootNamespace>
+    <ProjectName>7000-网易内推笔试-03_堆棋子（难）</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

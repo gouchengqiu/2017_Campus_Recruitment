@@ -73,21 +73,29 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6008_旋转数组", "6008_�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6009_1_Fibonacci", "6009_1_Fibonacci\6009_1_Fibonacci.vcxproj", "{AF5E270B-ED80-4D37-8783-3CC5C9CC86D9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SizeofTest", "Test\Test.vcxproj", "{FC40FEAA-8A77-4F7B-86DA-5CEBA1483EC2}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6001_赋值运算符函数", "6001_赋值运算符函数\6001_赋值运算符函数.vcxproj", "{5D782A92-0FDE-49D2-B6F4-BF0067F0F0F4}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0000-3-归并排序", "000-3-归并排序\000-3-归并排序.vcxproj", "{4C01911C-3662-4BCE-8A86-6F9FC4532005}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UTest000", "UTest000\UTest000.vcxproj", "{BE4CEF1C-7F2F-4888-982D-270160FC3F0D}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6029_数组中出现过半的数字", "6029_数组中出现过半的数字\6029_数组中出现过半的数字.vcxproj", "{00FF58C9-D444-487A-A74D-E1869045F3D4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "网易内推笔试-01", "网易内推笔试-01\网易内推笔试-01.vcxproj", "{4D522281-68EC-45A8-98ED-9709330B1C59}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7000-网易内推笔试-01_AABB", "网易内推笔试-01\网易内推笔试-01.vcxproj", "{4D522281-68EC-45A8-98ED-9709330B1C59}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "网易内推笔试-02", "网易内推笔试-02\网易内推笔试-02.vcxproj", "{1F891B2F-BF2D-48F9-8247-28482A23AF3C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7000-网易内推笔试-02_操作序列", "网易内推笔试-02\网易内推笔试-02.vcxproj", "{1F891B2F-BF2D-48F9-8247-28482A23AF3C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "网易内推笔试-03", "网易内推笔试-03\网易内推笔试-03.vcxproj", "{2EADE3C4-4130-40F0-B54C-A8137F35E8F9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7000-网易内推笔试-03_堆棋子（难）", "网易内推笔试-03\网易内推笔试-03.vcxproj", "{2EADE3C4-4130-40F0-B54C-A8137F35E8F9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7001-华为秋招内推-01", "7001-华为模拟-01\7001-华为模拟-01.vcxproj", "{3A7E7897-0B66-4FBF-B399-3873D752B866}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7001-华为秋招内推-02", "7001-华为模拟-02\7001-华为模拟-02.vcxproj", "{420D4830-A0C0-4E3D-940F-7F63133CFB93}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7000-网易内推笔试-04_构造等差数列", "7000-网易内推笔试-04\7000-网易内推笔试-04.vcxproj", "{49C88F49-6295-48CA-9DBC-907CA9B41A4B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7000-网易内推笔试-05_01串的最大长度", "7000-网易内推笔试-05\7000-网易内推笔试-05.vcxproj", "{CF68DD17-9119-45A9-8286-D0D1CE583B29}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7000-网易内推笔试-06_独立的小易", "7000-网易内推笔试-06_独立的小易\7000-网易内推笔试-06_独立的小易.vcxproj", "{859EF0F8-77BD-4A61-9E2F-E36FA0BE31EF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7001-华为秋招内推-03", "7001-华为秋招内推-03\7001-华为秋招内推-03.vcxproj", "{742C3B98-FF16-4CC1-B61D-A1AE1C788BC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -239,10 +247,6 @@ Global
 		{AF5E270B-ED80-4D37-8783-3CC5C9CC86D9}.Debug|Win32.Build.0 = Debug|Win32
 		{AF5E270B-ED80-4D37-8783-3CC5C9CC86D9}.Release|Win32.ActiveCfg = Release|Win32
 		{AF5E270B-ED80-4D37-8783-3CC5C9CC86D9}.Release|Win32.Build.0 = Release|Win32
-		{FC40FEAA-8A77-4F7B-86DA-5CEBA1483EC2}.Debug|Win32.ActiveCfg = Debug|Win32
-		{FC40FEAA-8A77-4F7B-86DA-5CEBA1483EC2}.Debug|Win32.Build.0 = Debug|Win32
-		{FC40FEAA-8A77-4F7B-86DA-5CEBA1483EC2}.Release|Win32.ActiveCfg = Release|Win32
-		{FC40FEAA-8A77-4F7B-86DA-5CEBA1483EC2}.Release|Win32.Build.0 = Release|Win32
 		{5D782A92-0FDE-49D2-B6F4-BF0067F0F0F4}.Debug|Win32.ActiveCfg = Debug|Win32
 		{5D782A92-0FDE-49D2-B6F4-BF0067F0F0F4}.Debug|Win32.Build.0 = Debug|Win32
 		{5D782A92-0FDE-49D2-B6F4-BF0067F0F0F4}.Release|Win32.ActiveCfg = Release|Win32
@@ -251,10 +255,6 @@ Global
 		{4C01911C-3662-4BCE-8A86-6F9FC4532005}.Debug|Win32.Build.0 = Debug|Win32
 		{4C01911C-3662-4BCE-8A86-6F9FC4532005}.Release|Win32.ActiveCfg = Release|Win32
 		{4C01911C-3662-4BCE-8A86-6F9FC4532005}.Release|Win32.Build.0 = Release|Win32
-		{BE4CEF1C-7F2F-4888-982D-270160FC3F0D}.Debug|Win32.ActiveCfg = Debug|Win32
-		{BE4CEF1C-7F2F-4888-982D-270160FC3F0D}.Debug|Win32.Build.0 = Debug|Win32
-		{BE4CEF1C-7F2F-4888-982D-270160FC3F0D}.Release|Win32.ActiveCfg = Release|Win32
-		{BE4CEF1C-7F2F-4888-982D-270160FC3F0D}.Release|Win32.Build.0 = Release|Win32
 		{00FF58C9-D444-487A-A74D-E1869045F3D4}.Debug|Win32.ActiveCfg = Debug|Win32
 		{00FF58C9-D444-487A-A74D-E1869045F3D4}.Debug|Win32.Build.0 = Debug|Win32
 		{00FF58C9-D444-487A-A74D-E1869045F3D4}.Release|Win32.ActiveCfg = Release|Win32
@@ -271,6 +271,30 @@ Global
 		{2EADE3C4-4130-40F0-B54C-A8137F35E8F9}.Debug|Win32.Build.0 = Debug|Win32
 		{2EADE3C4-4130-40F0-B54C-A8137F35E8F9}.Release|Win32.ActiveCfg = Release|Win32
 		{2EADE3C4-4130-40F0-B54C-A8137F35E8F9}.Release|Win32.Build.0 = Release|Win32
+		{3A7E7897-0B66-4FBF-B399-3873D752B866}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3A7E7897-0B66-4FBF-B399-3873D752B866}.Debug|Win32.Build.0 = Debug|Win32
+		{3A7E7897-0B66-4FBF-B399-3873D752B866}.Release|Win32.ActiveCfg = Release|Win32
+		{3A7E7897-0B66-4FBF-B399-3873D752B866}.Release|Win32.Build.0 = Release|Win32
+		{420D4830-A0C0-4E3D-940F-7F63133CFB93}.Debug|Win32.ActiveCfg = Debug|Win32
+		{420D4830-A0C0-4E3D-940F-7F63133CFB93}.Debug|Win32.Build.0 = Debug|Win32
+		{420D4830-A0C0-4E3D-940F-7F63133CFB93}.Release|Win32.ActiveCfg = Release|Win32
+		{420D4830-A0C0-4E3D-940F-7F63133CFB93}.Release|Win32.Build.0 = Release|Win32
+		{49C88F49-6295-48CA-9DBC-907CA9B41A4B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{49C88F49-6295-48CA-9DBC-907CA9B41A4B}.Debug|Win32.Build.0 = Debug|Win32
+		{49C88F49-6295-48CA-9DBC-907CA9B41A4B}.Release|Win32.ActiveCfg = Release|Win32
+		{49C88F49-6295-48CA-9DBC-907CA9B41A4B}.Release|Win32.Build.0 = Release|Win32
+		{CF68DD17-9119-45A9-8286-D0D1CE583B29}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CF68DD17-9119-45A9-8286-D0D1CE583B29}.Debug|Win32.Build.0 = Debug|Win32
+		{CF68DD17-9119-45A9-8286-D0D1CE583B29}.Release|Win32.ActiveCfg = Release|Win32
+		{CF68DD17-9119-45A9-8286-D0D1CE583B29}.Release|Win32.Build.0 = Release|Win32
+		{859EF0F8-77BD-4A61-9E2F-E36FA0BE31EF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{859EF0F8-77BD-4A61-9E2F-E36FA0BE31EF}.Debug|Win32.Build.0 = Debug|Win32
+		{859EF0F8-77BD-4A61-9E2F-E36FA0BE31EF}.Release|Win32.ActiveCfg = Release|Win32
+		{859EF0F8-77BD-4A61-9E2F-E36FA0BE31EF}.Release|Win32.Build.0 = Release|Win32
+		{742C3B98-FF16-4CC1-B61D-A1AE1C788BC0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{742C3B98-FF16-4CC1-B61D-A1AE1C788BC0}.Debug|Win32.Build.0 = Debug|Win32
+		{742C3B98-FF16-4CC1-B61D-A1AE1C788BC0}.Release|Win32.ActiveCfg = Release|Win32
+		{742C3B98-FF16-4CC1-B61D-A1AE1C788BC0}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

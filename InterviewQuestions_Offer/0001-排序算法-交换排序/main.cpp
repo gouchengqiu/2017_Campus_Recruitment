@@ -1,6 +1,6 @@
 #include <iostream>
 
-//1.快速排序
+//1.快速排序  错误版本
 void quickSort_1(int vData[], int vNumData)
 {
 	if (vNumData <= 1)
@@ -53,7 +53,7 @@ void quickSort_2(int vArray[], int vLength)
 
 	while (i < j)
 	{
-		while (i < j && vArray[j] >= MiddleData)
+		while (i < j && vArray[j] >= MiddleData)  
 		{
 			--j;
 		}
@@ -64,7 +64,7 @@ void quickSort_2(int vArray[], int vLength)
 			//++i;
 		}
 
-		while (i < j && vArray[i] < MiddleData)
+		while (i < j && vArray[i] < MiddleData) 
 		{
 			++i;
 		}
@@ -94,7 +94,7 @@ void quickSort_3(int vArray[], int vLeft, int vRight)
 
 	while (i < j)
 	{
-		while (i < j && vArray[j] >= Temp)
+		while (i < j && vArray[j] >= Temp)  //while1
 		{
 			j--;
 		}
@@ -104,7 +104,7 @@ void quickSort_3(int vArray[], int vLeft, int vRight)
 			i++;
 		}
 
-		while (i < j && vArray[i] < Temp)
+		while (i < j && vArray[i] < Temp) //while2     注意：while1和2的顺序不能变，否则会出错。
 		{
 			i++;
 		}
@@ -214,24 +214,24 @@ int main()
 	//int Data[10] = { 5, 1, 3, 9, 2, 4, 7, 6, 8, 0};
 	//quickSort_1(Data, 10);
 
-	//int Data[10] = {72, 6, 57, 88, 60, 42, 83, 73, 48, 85};
-	////quickSort_2(Data, 10); //error
-	//quickSort_3(Data, 0, 9);
-	////int Data[5] = {3, 5, 4, 2, 1};
-	////bubbleSort(Data, 5);
+	int Data[10] = {72, 6, 57, 88, 60, 42, 83, 73, 48, 85};
+	//quickSort_2(Data, 10); //error
+	quickSort_3(Data, 0, 9);
+	//int Data[5] = {3, 5, 4, 2, 1};
+	//bubbleSort(Data, 5);
 
-	//for (int i=0; i<10; ++i)
-	//{
-	//	std::cout << Data[i] << " ";
-	//}
-
-	int Data[5] = {3, 1, 2, 9, 5};
-	quickSort_4(Data, 5, 0, 4);
-	
 	for (int i=0; i<10; ++i)
 	{
 		std::cout << Data[i] << " ";
 	}
+
+	//int Data[5] = {3, 1, 2, 9, 5};
+	//quickSort_4(Data, 5, 0, 4);
+	//
+	//for (int i=0; i<10; ++i)
+	//{
+	//	std::cout << Data[i] << " ";
+	//}
 
 	system("pause");
 
