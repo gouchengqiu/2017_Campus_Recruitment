@@ -26,17 +26,23 @@ int main()
 	//std::cin.get(Temp, 20);
 	//std::cout << Temp << std::endl;
 
-	std::string StrTest;
-	getline(std::cin, StrTest);
-	std::cout << StrTest << std::endl;
+	//std::string StrTest;
+	//getline(std::cin, StrTest);
+	//std::cout << StrTest << std::endl;
 
-	char m[20]; 
-	gets(m);                       //不能写成m=gets(); 
-	std::cout << m << std::endl; 
+	//char m[20]; 
+	//gets(m);                       //不能写成m=gets(); 
+	//std::cout << m << std::endl; 
 
 // 	std::string StrTest;
 // 	StrTest = gets();//错误
 // 	gets(StrTest);//错误
+
+	std::string Line;
+	while (getline(std::cin, Line))
+	{
+		std::cout << Line << std::endl;
+	}
 
 	return 0;
 }
