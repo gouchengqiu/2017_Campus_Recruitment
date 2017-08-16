@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+#include "Object.h"
+
 struct MyStructA
 {
 	char a;
@@ -8,32 +10,31 @@ struct MyStructA
 	short c;
 };
 
+void test(char vArray[], int vLength)
+{
+	std::cout << "Sizeof vArray[]: " << sizeof(vArray) << std::endl;
+}
+
 int main()
 {
-	//int LengthA = sizeof(MyStructA);
+	//Case1: 基本类型
+	//char* p = new char[10];
+	//std::cout << "Sizeof p: " << sizeof(p) << std::endl;
 
-	std::vector<int> DataSet;
+	//char Array[10];
+	//std::cout << "Sizeof Array[10]: " << sizeof(Array) << std::endl;
 
-	for (unsigned int i=0; i<5; ++i)
-	{
-		DataSet.push_back(i);
-	}
+	//test(Array, 10);
 
-	//DataSet.resize(7);
+	//Case2: 对象类型
+	CObject Test;
+	int Result = sizeof(Test);
 
-	//DataSet.resize(2);
+	//CClassA ObjectA = 10;
+	//CClassA ObjectB = ObjectA;
 
-	//DataSet.resize(5, 2);
+	//CClassA ObjectC(20);
+	//ObjectC = ObjectA;
 
-	int LengthA = DataSet.size();
-	int LengthB = DataSet.capacity();
-
-	DataSet.clear();
-
-	DataSet.reserve(2);
-
-	LengthA = DataSet.size();
-	LengthB = DataSet.capacity();
-
-	return 0;
+	//return 0;
 }
