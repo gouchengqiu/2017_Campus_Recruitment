@@ -85,9 +85,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7000-网易内推笔试-02_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7000-网易内推笔试-03_堆棋子（难）", "网易内推笔试-03\网易内推笔试-03.vcxproj", "{2EADE3C4-4130-40F0-B54C-A8137F35E8F9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7001-华为秋招内推-01", "7001-华为模拟-01\7001-华为模拟-01.vcxproj", "{3A7E7897-0B66-4FBF-B399-3873D752B866}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7010-华为秋招内推-01", "7001-华为模拟-01\7001-华为模拟-01.vcxproj", "{3A7E7897-0B66-4FBF-B399-3873D752B866}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7001-华为秋招内推-02", "7001-华为模拟-02\7001-华为模拟-02.vcxproj", "{420D4830-A0C0-4E3D-940F-7F63133CFB93}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7011-华为秋招内推-02", "7001-华为模拟-02\7001-华为模拟-02.vcxproj", "{420D4830-A0C0-4E3D-940F-7F63133CFB93}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7000-网易内推笔试-04_构造等差数列", "7000-网易内推笔试-04\7000-网易内推笔试-04.vcxproj", "{49C88F49-6295-48CA-9DBC-907CA9B41A4B}"
 EndProject
@@ -95,7 +95,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7000-网易内推笔试-05_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7000-网易内推笔试-06_独立的小易", "7000-网易内推笔试-06_独立的小易\7000-网易内推笔试-06_独立的小易.vcxproj", "{859EF0F8-77BD-4A61-9E2F-E36FA0BE31EF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7001-华为秋招内推-03", "7001-华为秋招内推-03\7001-华为秋招内推-03.vcxproj", "{742C3B98-FF16-4CC1-B61D-A1AE1C788BC0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7012-华为秋招内推-03", "7001-华为秋招内推-03\7001-华为秋招内推-03.vcxproj", "{742C3B98-FF16-4CC1-B61D-A1AE1C788BC0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7020-阿里-测评(动态规划)", "7020-阿里-测评\7020-阿里-测评.vcxproj", "{663FFBAC-D44E-42BF-940B-6C4BE36496F6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7021_动态规划", "7020_动态规划\7020_动态规划.vcxproj", "{C21AF7AC-BA7D-4DC7-8AD5-6D9C3160A2C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -295,6 +299,14 @@ Global
 		{742C3B98-FF16-4CC1-B61D-A1AE1C788BC0}.Debug|Win32.Build.0 = Debug|Win32
 		{742C3B98-FF16-4CC1-B61D-A1AE1C788BC0}.Release|Win32.ActiveCfg = Release|Win32
 		{742C3B98-FF16-4CC1-B61D-A1AE1C788BC0}.Release|Win32.Build.0 = Release|Win32
+		{663FFBAC-D44E-42BF-940B-6C4BE36496F6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{663FFBAC-D44E-42BF-940B-6C4BE36496F6}.Debug|Win32.Build.0 = Debug|Win32
+		{663FFBAC-D44E-42BF-940B-6C4BE36496F6}.Release|Win32.ActiveCfg = Release|Win32
+		{663FFBAC-D44E-42BF-940B-6C4BE36496F6}.Release|Win32.Build.0 = Release|Win32
+		{C21AF7AC-BA7D-4DC7-8AD5-6D9C3160A2C8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C21AF7AC-BA7D-4DC7-8AD5-6D9C3160A2C8}.Debug|Win32.Build.0 = Debug|Win32
+		{C21AF7AC-BA7D-4DC7-8AD5-6D9C3160A2C8}.Release|Win32.ActiveCfg = Release|Win32
+		{C21AF7AC-BA7D-4DC7-8AD5-6D9C3160A2C8}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
