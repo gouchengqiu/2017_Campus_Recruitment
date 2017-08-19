@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
 #include "Object.h"
 
@@ -27,8 +28,8 @@ int main()
 	//test(Array, 10);
 
 	//Case2: 对象类型
-	CObject Test;
-	int Result = sizeof(Test);
+	//CObject Test;
+	//int Result = sizeof(Test);
 
 	//CClassA ObjectA = 10;
 	//CClassA ObjectB = ObjectA;
