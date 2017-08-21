@@ -87,6 +87,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "300_MemoryCopy_Strcpy_Strnc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "301_Sizeof", "301_Sizeof\301_Sizeof.vcxproj", "{3BB1783B-2632-45B3-BF0B-DAE844EF1A97}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12_01_Vector大小和容量", "12_01_Vector大小和容量\12_01_Vector大小和容量.vcxproj", "{3361C716-551E-49BE-BC9D-2D5D4E4BBBE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -265,6 +267,10 @@ Global
 		{3BB1783B-2632-45B3-BF0B-DAE844EF1A97}.Debug|Win32.Build.0 = Debug|Win32
 		{3BB1783B-2632-45B3-BF0B-DAE844EF1A97}.Release|Win32.ActiveCfg = Release|Win32
 		{3BB1783B-2632-45B3-BF0B-DAE844EF1A97}.Release|Win32.Build.0 = Release|Win32
+		{3361C716-551E-49BE-BC9D-2D5D4E4BBBE3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3361C716-551E-49BE-BC9D-2D5D4E4BBBE3}.Debug|Win32.Build.0 = Debug|Win32
+		{3361C716-551E-49BE-BC9D-2D5D4E4BBBE3}.Release|Win32.ActiveCfg = Release|Win32
+		{3361C716-551E-49BE-BC9D-2D5D4E4BBBE3}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

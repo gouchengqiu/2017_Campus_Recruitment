@@ -1,109 +1,57 @@
-//#include <string>
-//#include <iostream>
-//
-////将string转换成int的多种方法
-////http://c.biancheng.net/cpp/html/124.html
-//int main()
-//{
-//	std::string Str = "123Test";
-//	int Result = atoi(Str.c_str());
-//	std::cout << Str << " " << Result << std::endl;
-//}
-
+#include <string>
 #include <iostream>
-#include <map>
-#include <vector>
 
-using namespace std; 
+//将string转换成int的多种方法
+//http://c.biancheng.net/cpp/html/124.html
+
+int string2Int_1(const std::string& vInputStr)
+{
+	return atoi(vInputStr.c_str());
+}
+
+#include <sstream>
+int string2Int_2(const std::string& vInputStr)
+{
+	std::stringstream SS;  //std::stringstream SS(vInputStr);
+	SS.str(vInputStr);
+
+	int Data;
+	SS >> Data;
+
+	return Data;
+}
+
+//http://blog.csdn.net/na_beginning/article/details/53576123
+void int2String_1(int vData, std::string& voResult)
+{
+	voResult = std::to_string(vData);
+}
+
+void int2String_2(int vData, std::string& voResult)
+{
+	//错误示范
+	//std::ostringstream SS(vData);
+	//voResult = SS.str();
+
+	std::stringstream SS;
+	SS << vData;
+
+	voResult = SS.str();
+}
+
 int main()
-{   
-	//std::map<int, float> Index2DistanceMap;
-	//for (unsigned int i=0; i<10; ++i)
-	//{
-	//	Index2DistanceMap.insert(std::pair<int, float>(i, (float)i));
-	//}
+{
+	std::string Str = "12345";
+	int Result1 = string2Int_1(Str);
+	std::cout << Str << " " << Result1 << std::endl;
 
-	//std::map<int, float>::iterator Iter = Index2DistanceMap.begin();
-	//for ( ; Iter!=Index2DistanceMap.end();++Iter)
-	//{
-	//	if (Iter->first == 5)
-	//	{
-	//		Iter = Index2DistanceMap.erase(Iter);
-	//	}
-	//}
+	int Result2 = string2Int_2(Str);
+	std::cout << Str << " " << Result2 << std::endl;
 
-	//for (Iter = Index2DistanceMap.begin(); Iter != Index2DistanceMap.end(); ++Iter)
-	//{
-	//	std::cout << Iter->first << " " << Iter->second << std::endl;
-	//}
-
-	vector<int> vect;  
-	int i = 0;  
-
-	vect.reserve(10);  
-
-	vect.push_back(1);  
-	vect.push_back(2);  
-	vect.push_back(3);  
-	vect.push_back(4);  
-	vect.push_back(5);  
-	vect.push_back(6);  
-	vect.push_back(7);  
-	vect.push_back(8);                               // 此时vect的size大小为8  
-
-	cout << vect.size() << endl;  
-	cout << vect.capacity() << endl;  
-
-	vect.resize(6);                                   // 此处设置vect的大小比当前vect中元素数量小，且没有指定初始化值  
-
-	cout << "size1 = " << vect.size() << endl;  
-	cout << "capacity1 = " << vect.capacity() << endl;  
-
-	for (i = 0 ; i < vect.size(); i++)  
-	{  
-		cout << vect[i] << endl;  
-	}  
-
-	vect.resize(4, 10);                              // 此处设置vect的大小为4，比前面的6小，且指定了初始化值，看是否会改变前四个元素的值  
-
-	cout << "size1_1 = " << vect.size() << endl;  
-	cout << "capacity1_1 = " << vect.capacity() << endl;  
-
-	for (i = 0 ; i < vect.size(); i++)  
-	{  
-		cout << vect[i] << endl;  
-	}  
-
-	vect.resize(12, 7);                         // 此处设置vect的大小为8，大于当前vect的大小4，但是小于vect的当前容量10，指定初始化值为7  
-
-	cout << "size2= " << vect.size() << endl;  
-
-	cout << "capacity2 = " << vect.capacity() << endl;  
-
-	for (int i = 0 ; i < vect.size(); i++)  
-	{  
-		cout << vect[i] << endl;  
-	}  
-
-	vect.resize(10);                           // 此处设置vect的大小为10，大于当前vect的大小8，但是等于vect的当前容量10，没有指定初始化值，采用默认值  
-
-	cout << "size3 = " << vect.size() << endl;  
-	cout << "capacity3 = " << vect.capacity() << endl;  
-
-	for (int i = 0; i < vect.size(); i++)  
-	{  
-		cout << vect[i] << endl;  
-	}  
-
-	vect.resize(12, 77);                 // 此处设置vect的大小为10，不仅大于当前vect的大小10，还大于vect的当前容量10，会为vect重新分配存储空间  
-
-	cout << "size4 = " << vect.size() << endl;  
-	cout << "capacity4 = " << vect.capacity() << endl;  
-
-	for (int i = 0; i < vect.size(); i++)  
-	{  
-		cout << vect[i] << endl;  
-	}  
+	int DataTest = 8899;
+	std::string Str1, Str2;
+	int2String_1(DataTest, Str1);
+	int2String_2(DataTest, Str2);
 
 	return 0;
 }

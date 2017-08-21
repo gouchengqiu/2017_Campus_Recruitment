@@ -13,6 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E05CFD82-C361-481A-B433-9E20B55F4278}</ProjectGuid>
     <RootNamespace>My20_String_translate2int</RootNamespace>
+    <ProjectName>20_String_int_互相转换</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
