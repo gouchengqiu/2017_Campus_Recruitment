@@ -101,6 +101,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7020-阿里-测评(动态�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7021_动态规划", "7020_动态规划\7020_动态规划.vcxproj", "{C21AF7AC-BA7D-4DC7-8AD5-6D9C3160A2C8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "19_分割字符串", "19_分割字符串\19_分割字符串.vcxproj", "{2069B5CD-C245-48D3-A32C-B4420EA58490}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6005_0_链表", "6005_0_链表\6005_0_链表.vcxproj", "{6C1E633B-BC85-486E-89A2-380C88F4B767}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -307,6 +311,14 @@ Global
 		{C21AF7AC-BA7D-4DC7-8AD5-6D9C3160A2C8}.Debug|Win32.Build.0 = Debug|Win32
 		{C21AF7AC-BA7D-4DC7-8AD5-6D9C3160A2C8}.Release|Win32.ActiveCfg = Release|Win32
 		{C21AF7AC-BA7D-4DC7-8AD5-6D9C3160A2C8}.Release|Win32.Build.0 = Release|Win32
+		{2069B5CD-C245-48D3-A32C-B4420EA58490}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2069B5CD-C245-48D3-A32C-B4420EA58490}.Debug|Win32.Build.0 = Debug|Win32
+		{2069B5CD-C245-48D3-A32C-B4420EA58490}.Release|Win32.ActiveCfg = Release|Win32
+		{2069B5CD-C245-48D3-A32C-B4420EA58490}.Release|Win32.Build.0 = Release|Win32
+		{6C1E633B-BC85-486E-89A2-380C88F4B767}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6C1E633B-BC85-486E-89A2-380C88F4B767}.Debug|Win32.Build.0 = Debug|Win32
+		{6C1E633B-BC85-486E-89A2-380C88F4B767}.Release|Win32.ActiveCfg = Release|Win32
+		{6C1E633B-BC85-486E-89A2-380C88F4B767}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
