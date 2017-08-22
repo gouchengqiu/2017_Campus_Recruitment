@@ -105,6 +105,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "19_分割字符串", "19_�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6005_0_链表", "6005_0_链表\6005_0_链表.vcxproj", "{6C1E633B-BC85-486E-89A2-380C88F4B767}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "8010_今日头条_01", "8010_今日头条_01\8010_今日头条_01.vcxproj", "{F5B2CEC9-3DD6-4D9D-A466-B5782CACCD91}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "8010_今日头条_02", "8010_今日头条_02\8010_今日头条_02.vcxproj", "{50BB8413-9E45-408B-8983-CA9A846E51A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -319,6 +323,14 @@ Global
 		{6C1E633B-BC85-486E-89A2-380C88F4B767}.Debug|Win32.Build.0 = Debug|Win32
 		{6C1E633B-BC85-486E-89A2-380C88F4B767}.Release|Win32.ActiveCfg = Release|Win32
 		{6C1E633B-BC85-486E-89A2-380C88F4B767}.Release|Win32.Build.0 = Release|Win32
+		{F5B2CEC9-3DD6-4D9D-A466-B5782CACCD91}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F5B2CEC9-3DD6-4D9D-A466-B5782CACCD91}.Debug|Win32.Build.0 = Debug|Win32
+		{F5B2CEC9-3DD6-4D9D-A466-B5782CACCD91}.Release|Win32.ActiveCfg = Release|Win32
+		{F5B2CEC9-3DD6-4D9D-A466-B5782CACCD91}.Release|Win32.Build.0 = Release|Win32
+		{50BB8413-9E45-408B-8983-CA9A846E51A4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{50BB8413-9E45-408B-8983-CA9A846E51A4}.Debug|Win32.Build.0 = Debug|Win32
+		{50BB8413-9E45-408B-8983-CA9A846E51A4}.Release|Win32.ActiveCfg = Release|Win32
+		{50BB8413-9E45-408B-8983-CA9A846E51A4}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
