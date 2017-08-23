@@ -109,6 +109,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "8010_今日头条_01", "801
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "8010_今日头条_02", "8010_今日头条_02\8010_今日头条_02.vcxproj", "{50BB8413-9E45-408B-8983-CA9A846E51A4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0000-4-插入排序", "0000-4-插入排序\0000-4-插入排序.vcxproj", "{3E75E998-7BD7-42F6-8694-619124CF199F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08_字符串的组合", "08_字符串的组合\08_字符串的组合.vcxproj", "{4ECBCDEF-CE39-4D71-A074-3BDE29F19DBC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09_字符串的全排列", "09_字符串的全排列\09_字符串的全排列.vcxproj", "{0FC353E5-97ED-49DA-AEEF-825A8F26F3DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -331,6 +337,18 @@ Global
 		{50BB8413-9E45-408B-8983-CA9A846E51A4}.Debug|Win32.Build.0 = Debug|Win32
 		{50BB8413-9E45-408B-8983-CA9A846E51A4}.Release|Win32.ActiveCfg = Release|Win32
 		{50BB8413-9E45-408B-8983-CA9A846E51A4}.Release|Win32.Build.0 = Release|Win32
+		{3E75E998-7BD7-42F6-8694-619124CF199F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3E75E998-7BD7-42F6-8694-619124CF199F}.Debug|Win32.Build.0 = Debug|Win32
+		{3E75E998-7BD7-42F6-8694-619124CF199F}.Release|Win32.ActiveCfg = Release|Win32
+		{3E75E998-7BD7-42F6-8694-619124CF199F}.Release|Win32.Build.0 = Release|Win32
+		{4ECBCDEF-CE39-4D71-A074-3BDE29F19DBC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4ECBCDEF-CE39-4D71-A074-3BDE29F19DBC}.Debug|Win32.Build.0 = Debug|Win32
+		{4ECBCDEF-CE39-4D71-A074-3BDE29F19DBC}.Release|Win32.ActiveCfg = Release|Win32
+		{4ECBCDEF-CE39-4D71-A074-3BDE29F19DBC}.Release|Win32.Build.0 = Release|Win32
+		{0FC353E5-97ED-49DA-AEEF-825A8F26F3DA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0FC353E5-97ED-49DA-AEEF-825A8F26F3DA}.Debug|Win32.Build.0 = Debug|Win32
+		{0FC353E5-97ED-49DA-AEEF-825A8F26F3DA}.Release|Win32.ActiveCfg = Release|Win32
+		{0FC353E5-97ED-49DA-AEEF-825A8F26F3DA}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
