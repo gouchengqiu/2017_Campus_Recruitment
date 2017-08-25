@@ -2,37 +2,6 @@
 #include "List.h"
 #include <iostream>
 
-//struct SListNode
-//{
-//	int m_Value;
-//	SListNode* m_pNext;
-//
-//	SListNode() {}
-//	SListNode(SListNode* vNext, int vValue) : m_pNext(vNext), m_Value(vValue) {}
-//};
-
-void addToTail(SListNode* pHead, int vValue) //注意形参指针若要为其分配内存，应该用**
-{
-	SListNode* pNewNode = new SListNode();
-	pNewNode->m_Value = vValue;
-	pNewNode->m_pNext = NULL;
-
-	if (pHead == NULL)
-	{
-		pHead = pNewNode;
-	}
-	else
-	{
-		SListNode* pTempNode = pHead;
-		while (pTempNode->m_pNext)
-		{
-			pTempNode = pTempNode->m_pNext;
-		}
-
-		pTempNode->m_pNext = pNewNode;
-	}
-}
-
 //********************************************************************
 //FUNCTION:求单链表环中第一个入口点
 //http://blog.csdn.net/shanshanpt/article/details/12883585
@@ -121,22 +90,12 @@ void testForGetFirstNodeInCircle()
 	connectListNode(pNode4, pNode5);
 	connectListNode(pNode5, pNode3);
 
-	SListNode* pFirstCommonNode = getFirstNodeInCircle(pNode1);
+	//SListNode* pFirstCommonNode = getFirstNodeInCircle(pNode1);
 }
 
 int main()
 {
-	//SListNode* pNode1 = new SListNode();
-	//pNode1->m_Value = 1;
-	//pNode1->m_pNext = NULL;
-
-	//addToTail(pNode1, 2);
-
-	//SListNode* pTest = NULL;
-	//addToTail(pTest, 5);
-
 	testForGetFirstNodeInCircle();
-
 
 	return 0;
 }

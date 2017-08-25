@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{6C1E633B-BC85-486E-89A2-380C88F4B767}</ProjectGuid>
-    <RootNamespace>My6005_0_链表</RootNamespace>
-    <ProjectName>6005_0_链表常见操作</ProjectName>
+    <ProjectGuid>{1F9C970D-332E-4B3D-A473-9CFFC3B6CD5B}</ProjectGuid>
+    <RootNamespace>My7021阿里测评动态规划</RootNamespace>
+    <ProjectName>7021-阿里</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -44,12 +44,9 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>../Utility;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>../Debug;</AdditionalLibraryDirectories>
-      <AdditionalDependencies>Utility.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
