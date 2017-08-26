@@ -8,10 +8,10 @@ int main()
 
 	// different member versions of find in the same order as above:  
 	std::size_t found = str.find(str2);  
-	if (found!=std::string::npos)  
+	if (found != std::string::npos)  
 		std::cout << "first 'needle' found at: " << found << '\n';  
 
-	found=str.find("needles are small",found+1,9);  //查找字符串"needles are small"的前9个字符，从str的found+1开始。
+	found=str.find("needles are small", found+1, 9);  //查找字符串"needles are small"的前9个字符，从str的found+1开始。
 	if (found!=std::string::npos)  
 		std::cout << "second 'needle' found at: " << found << '\n';  
 

@@ -81,13 +81,19 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "082_New_Delete_Free_Memory"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20_String_find", "20_String_find\20_String_find.vcxproj", "{85775E41-FACD-4E46-AD9D-FC516841D5F0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20_String_translate2int", "20_String_translate2int\20_String_translate2int.vcxproj", "{E05CFD82-C361-481A-B433-9E20B55F4278}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20_String_int_互相转换", "20_String_translate2int\20_String_translate2int.vcxproj", "{E05CFD82-C361-481A-B433-9E20B55F4278}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "300_MemoryCopy_Strcpy_Strncpy", "300_MemoryCopy_Strcpy_Strncpy\300_MemoryCopy_Strcpy_Strncpy.vcxproj", "{DD0E9387-EA42-4EF7-BC7C-62295B2D6F7E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "301_Sizeof", "301_Sizeof\301_Sizeof.vcxproj", "{3BB1783B-2632-45B3-BF0B-DAE844EF1A97}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12_01_Vector大小和容量", "12_01_Vector大小和容量\12_01_Vector大小和容量.vcxproj", "{3361C716-551E-49BE-BC9D-2D5D4E4BBBE3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20_String_inpute_解析一串字符串输入", "20_String_inpute_解析一串字符串输入\20_String_inpute_解析一串字符串输入.vcxproj", "{B25AD1B0-5D3E-410B-8196-BD794346D4B7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "21_Sum1ToN", "Sum1ToN\Sum1ToN.vcxproj", "{7E1C61B7-181E-4F6D-9975-8AF6E0C8F41C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "21_Static", "21_Static\21_Static.vcxproj", "{392AC5D2-B76F-48CB-B23C-4F4DB203610E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -271,6 +277,18 @@ Global
 		{3361C716-551E-49BE-BC9D-2D5D4E4BBBE3}.Debug|Win32.Build.0 = Debug|Win32
 		{3361C716-551E-49BE-BC9D-2D5D4E4BBBE3}.Release|Win32.ActiveCfg = Release|Win32
 		{3361C716-551E-49BE-BC9D-2D5D4E4BBBE3}.Release|Win32.Build.0 = Release|Win32
+		{B25AD1B0-5D3E-410B-8196-BD794346D4B7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B25AD1B0-5D3E-410B-8196-BD794346D4B7}.Debug|Win32.Build.0 = Debug|Win32
+		{B25AD1B0-5D3E-410B-8196-BD794346D4B7}.Release|Win32.ActiveCfg = Release|Win32
+		{B25AD1B0-5D3E-410B-8196-BD794346D4B7}.Release|Win32.Build.0 = Release|Win32
+		{7E1C61B7-181E-4F6D-9975-8AF6E0C8F41C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7E1C61B7-181E-4F6D-9975-8AF6E0C8F41C}.Debug|Win32.Build.0 = Debug|Win32
+		{7E1C61B7-181E-4F6D-9975-8AF6E0C8F41C}.Release|Win32.ActiveCfg = Release|Win32
+		{7E1C61B7-181E-4F6D-9975-8AF6E0C8F41C}.Release|Win32.Build.0 = Release|Win32
+		{392AC5D2-B76F-48CB-B23C-4F4DB203610E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{392AC5D2-B76F-48CB-B23C-4F4DB203610E}.Debug|Win32.Build.0 = Debug|Win32
+		{392AC5D2-B76F-48CB-B23C-4F4DB203610E}.Release|Win32.ActiveCfg = Release|Win32
+		{392AC5D2-B76F-48CB-B23C-4F4DB203610E}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
