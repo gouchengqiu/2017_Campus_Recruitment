@@ -2,36 +2,35 @@
 #include <exception>
 #include "../Utility/BinaryTree.h"
 
-int findDataInArray(int vData, int* vArray, int vArrayLength)
+SBinaryTreeNode* reconstructBinaryTree(int* vPreOrder, int* vInOrder, int vLength)
 {
-	for (int i=0; i<vArrayLength; ++i)
-	{
-		if (vData == vArray[i])
-		{
-			return i;
-		}
-	}
-	return -1;
-}
-
-SBinaryTreeNode* reconstructBinaryTree(int* vPreOrder, int* vMiddleOrder, int vLength)
-{
-	if (vPreOrder == NULL || vMiddleOrder == NULL || vLength < 1)
+	if (vPreOrder == NULL || vInOrder == NULL || vLength < 1)
 	{
 		return NULL;
 	}
 
 	int RootData = vPreOrder[0];
-	int IndexInMiddleOrderArray = findDataInArray(RootData, vMiddleOrder, vLength);
-	if (IndexInMiddleOrderArray < 0)
+	int RootPosInOrder = -1;
+	for (unsigned int i=0; i<vLength; ++i)
+	{
+		if (vInOrder[i] == RootData)
+		{
+			RootPosInOrder = i;
+			break;
+		}
+	}
+
+	if (RootPosInOrder == -1)
 	{
 		throw std::exception("Invalid input.");
 	}
 
 	SBinaryTreeNode* pRootNode = createBinaryTreeNode(RootData);
-	SBinaryTreeNode* pLeftNode = reconstructBinaryTree(vPreOrder + 1, vMiddleOrder, IndexInMiddleOrderArray);
-	SBinaryTreeNode* pRightNode = reconstructBinaryTree(vPreOrder + IndexInMiddleOrderArray + 1, vMiddleOrder + IndexInMiddleOrderArray + 1, vLength - (IndexInMiddleOrderArray + 1));
+	SBinaryTreeNode* pLeftNode = reconstructBinaryTree(vPreOrder + 1, vInOrder, RootPosInOrder);
+	SBinaryTreeNode* pRightNode = reconstructBinaryTree(vPreOrder + RootPosInOrder + 1, vInOrder + RootPosInOrder + 1, vLength - (RootPosInOrder + 1));
 	connectBinaryTreeNode(pRootNode, pLeftNode, pRightNode);
+
+	return pRootNode;
 }
 
 void test(char* vStr, int* vPreOrder, int* vInOrder, int vArrayLength)
