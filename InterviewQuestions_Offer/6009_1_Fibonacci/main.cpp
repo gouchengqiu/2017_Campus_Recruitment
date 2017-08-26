@@ -2,7 +2,7 @@
 
 int fibonacci(unsigned int vNumber)
 {
-	if (vNumber == 0 || vNumber ==1)
+	if (vNumber == 0 || vNumber == 1)
 	{
 		return vNumber;
 	}
