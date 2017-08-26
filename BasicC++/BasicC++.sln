@@ -93,7 +93,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20_String_inpute_解析一�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "21_Sum1ToN", "Sum1ToN\Sum1ToN.vcxproj", "{7E1C61B7-181E-4F6D-9975-8AF6E0C8F41C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "21_Static", "21_Static\21_Static.vcxproj", "{392AC5D2-B76F-48CB-B23C-4F4DB203610E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20_括号匹配  字符串", "20_括号匹配  字符串\20_括号匹配  字符串.vcxproj", "{FF4FA438-CF67-43F3-AACC-E18B10E1219F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -285,10 +285,10 @@ Global
 		{7E1C61B7-181E-4F6D-9975-8AF6E0C8F41C}.Debug|Win32.Build.0 = Debug|Win32
 		{7E1C61B7-181E-4F6D-9975-8AF6E0C8F41C}.Release|Win32.ActiveCfg = Release|Win32
 		{7E1C61B7-181E-4F6D-9975-8AF6E0C8F41C}.Release|Win32.Build.0 = Release|Win32
-		{392AC5D2-B76F-48CB-B23C-4F4DB203610E}.Debug|Win32.ActiveCfg = Debug|Win32
-		{392AC5D2-B76F-48CB-B23C-4F4DB203610E}.Debug|Win32.Build.0 = Debug|Win32
-		{392AC5D2-B76F-48CB-B23C-4F4DB203610E}.Release|Win32.ActiveCfg = Release|Win32
-		{392AC5D2-B76F-48CB-B23C-4F4DB203610E}.Release|Win32.Build.0 = Release|Win32
+		{FF4FA438-CF67-43F3-AACC-E18B10E1219F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FF4FA438-CF67-43F3-AACC-E18B10E1219F}.Debug|Win32.Build.0 = Debug|Win32
+		{FF4FA438-CF67-43F3-AACC-E18B10E1219F}.Release|Win32.ActiveCfg = Release|Win32
+		{FF4FA438-CF67-43F3-AACC-E18B10E1219F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
