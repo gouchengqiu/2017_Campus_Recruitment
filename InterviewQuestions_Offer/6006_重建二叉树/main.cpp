@@ -89,7 +89,7 @@ void test1()
 {
 	const int Number = 8;
 	int PreOrder[Number] = {1, 2, 4, 7, 3, 5, 6, 8};
-	int InOrder[Number] = {4, 7, 2, 1, 5, 3, 8, 6};
+	int InOrder[Number]  = {4, 7, 2, 1, 5, 3, 8, 6};
 	test("test1", PreOrder, InOrder, Number);
 }
 
