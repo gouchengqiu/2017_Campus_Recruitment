@@ -135,6 +135,18 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6005_21_二叉树节点个�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6005_22_二叉树深度", "6005_22_二叉树深度\6005_22_二叉树深度.vcxproj", "{6918E1AE-EF49-4CE7-9162-B5B5020C9152}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6005_23_平衡二叉树", "6005_23_平衡二叉树\6005_23_平衡二叉树.vcxproj", "{E276AB1A-218F-45C8-AFFC-F6909C22CAC7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6005_24_二叉树遍历", "6005_24_二叉树遍历\6005_24_二叉树遍历.vcxproj", "{93492B08-70AF-4724-9C3E-E502B7996686}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6005_25_二叉树分层遍历", "6005_25_二叉树分层遍历\6005_25_二叉树分层遍历.vcxproj", "{6CFFFA56-A230-4AE1-937B-8D510C04C7B4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6005_26_二叉树叶子结点数", "6005_25_二叉树叶子结点数\6005_25_二叉树叶子结点数.vcxproj", "{653C75A9-2E0F-4CA6-8858-01C63D994CC3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6005_27_二叉树某层结点数", "6005_27_二叉树某层结点数\6005_27_二叉树某层结点数.vcxproj", "{DAC5E4A5-E12A-4342-A0E9-283D0A624B90}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6005_28_两棵二叉树是否相同", "6005_28_两棵二叉树是否相同\6005_28_两棵二叉树是否相同.vcxproj", "{A13106A4-D031-4ACC-8DD6-64B79147B039}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -409,6 +421,30 @@ Global
 		{6918E1AE-EF49-4CE7-9162-B5B5020C9152}.Debug|Win32.Build.0 = Debug|Win32
 		{6918E1AE-EF49-4CE7-9162-B5B5020C9152}.Release|Win32.ActiveCfg = Release|Win32
 		{6918E1AE-EF49-4CE7-9162-B5B5020C9152}.Release|Win32.Build.0 = Release|Win32
+		{E276AB1A-218F-45C8-AFFC-F6909C22CAC7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E276AB1A-218F-45C8-AFFC-F6909C22CAC7}.Debug|Win32.Build.0 = Debug|Win32
+		{E276AB1A-218F-45C8-AFFC-F6909C22CAC7}.Release|Win32.ActiveCfg = Release|Win32
+		{E276AB1A-218F-45C8-AFFC-F6909C22CAC7}.Release|Win32.Build.0 = Release|Win32
+		{93492B08-70AF-4724-9C3E-E502B7996686}.Debug|Win32.ActiveCfg = Debug|Win32
+		{93492B08-70AF-4724-9C3E-E502B7996686}.Debug|Win32.Build.0 = Debug|Win32
+		{93492B08-70AF-4724-9C3E-E502B7996686}.Release|Win32.ActiveCfg = Release|Win32
+		{93492B08-70AF-4724-9C3E-E502B7996686}.Release|Win32.Build.0 = Release|Win32
+		{6CFFFA56-A230-4AE1-937B-8D510C04C7B4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6CFFFA56-A230-4AE1-937B-8D510C04C7B4}.Debug|Win32.Build.0 = Debug|Win32
+		{6CFFFA56-A230-4AE1-937B-8D510C04C7B4}.Release|Win32.ActiveCfg = Release|Win32
+		{6CFFFA56-A230-4AE1-937B-8D510C04C7B4}.Release|Win32.Build.0 = Release|Win32
+		{653C75A9-2E0F-4CA6-8858-01C63D994CC3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{653C75A9-2E0F-4CA6-8858-01C63D994CC3}.Debug|Win32.Build.0 = Debug|Win32
+		{653C75A9-2E0F-4CA6-8858-01C63D994CC3}.Release|Win32.ActiveCfg = Release|Win32
+		{653C75A9-2E0F-4CA6-8858-01C63D994CC3}.Release|Win32.Build.0 = Release|Win32
+		{DAC5E4A5-E12A-4342-A0E9-283D0A624B90}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DAC5E4A5-E12A-4342-A0E9-283D0A624B90}.Debug|Win32.Build.0 = Debug|Win32
+		{DAC5E4A5-E12A-4342-A0E9-283D0A624B90}.Release|Win32.ActiveCfg = Release|Win32
+		{DAC5E4A5-E12A-4342-A0E9-283D0A624B90}.Release|Win32.Build.0 = Release|Win32
+		{A13106A4-D031-4ACC-8DD6-64B79147B039}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A13106A4-D031-4ACC-8DD6-64B79147B039}.Debug|Win32.Build.0 = Debug|Win32
+		{A13106A4-D031-4ACC-8DD6-64B79147B039}.Release|Win32.ActiveCfg = Release|Win32
+		{A13106A4-D031-4ACC-8DD6-64B79147B039}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
