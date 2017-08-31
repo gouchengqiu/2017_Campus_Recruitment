@@ -147,6 +147,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6005_27_二叉树某层结�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6005_28_两棵二叉树是否相同", "6005_28_两棵二叉树是否相同\6005_28_两棵二叉树是否相同.vcxproj", "{A13106A4-D031-4ACC-8DD6-64B79147B039}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9010_美团秋招_01", "9010_美团秋招_01\9010_美团秋招_01.vcxproj", "{395E9D47-21BF-49BB-B29A-E77EEDE91C0B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9010_美团秋招_02", "9010_美团秋招_02\9010_美团秋招_02.vcxproj", "{7748039E-2230-4A35-8C9C-71E5BDC752AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -445,6 +449,14 @@ Global
 		{A13106A4-D031-4ACC-8DD6-64B79147B039}.Debug|Win32.Build.0 = Debug|Win32
 		{A13106A4-D031-4ACC-8DD6-64B79147B039}.Release|Win32.ActiveCfg = Release|Win32
 		{A13106A4-D031-4ACC-8DD6-64B79147B039}.Release|Win32.Build.0 = Release|Win32
+		{395E9D47-21BF-49BB-B29A-E77EEDE91C0B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{395E9D47-21BF-49BB-B29A-E77EEDE91C0B}.Debug|Win32.Build.0 = Debug|Win32
+		{395E9D47-21BF-49BB-B29A-E77EEDE91C0B}.Release|Win32.ActiveCfg = Release|Win32
+		{395E9D47-21BF-49BB-B29A-E77EEDE91C0B}.Release|Win32.Build.0 = Release|Win32
+		{7748039E-2230-4A35-8C9C-71E5BDC752AF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7748039E-2230-4A35-8C9C-71E5BDC752AF}.Debug|Win32.Build.0 = Debug|Win32
+		{7748039E-2230-4A35-8C9C-71E5BDC752AF}.Release|Win32.ActiveCfg = Release|Win32
+		{7748039E-2230-4A35-8C9C-71E5BDC752AF}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
