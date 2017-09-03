@@ -62,6 +62,9 @@ int _tmain(int argc, _TCHAR* argv[])
     // 输入10，期待的输出是2
     Test(10, 2);
 
+	Test(-1, 2);//这样的输入  最终参与运算的是-1的补码
+	Test(0x80000001, 2);
+
     // 输入0x7FFFFFFF，期待的输出是31
     Test(0x7FFFFFFF, 31);
 
@@ -73,4 +76,3 @@ int _tmain(int argc, _TCHAR* argv[])
 
     return 0;
 }
-

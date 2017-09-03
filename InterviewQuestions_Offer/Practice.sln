@@ -151,6 +151,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9010_美团秋招_01", "901
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9010_美团秋招_02", "9010_美团秋招_02\9010_美团秋招_02.vcxproj", "{7748039E-2230-4A35-8C9C-71E5BDC752AF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6010_二进制中1的个数", "6010_二进制中1的个数\6010_二进制中1的个数.vcxproj", "{45AA5DEE-2225-48E3-B914-732681D2C381}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6010_01_习题", "6010_01_习题\6010_01_习题.vcxproj", "{60FC4BB5-5F73-435A-9D50-4481F19E639F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -457,6 +461,14 @@ Global
 		{7748039E-2230-4A35-8C9C-71E5BDC752AF}.Debug|Win32.Build.0 = Debug|Win32
 		{7748039E-2230-4A35-8C9C-71E5BDC752AF}.Release|Win32.ActiveCfg = Release|Win32
 		{7748039E-2230-4A35-8C9C-71E5BDC752AF}.Release|Win32.Build.0 = Release|Win32
+		{45AA5DEE-2225-48E3-B914-732681D2C381}.Debug|Win32.ActiveCfg = Debug|Win32
+		{45AA5DEE-2225-48E3-B914-732681D2C381}.Debug|Win32.Build.0 = Debug|Win32
+		{45AA5DEE-2225-48E3-B914-732681D2C381}.Release|Win32.ActiveCfg = Release|Win32
+		{45AA5DEE-2225-48E3-B914-732681D2C381}.Release|Win32.Build.0 = Release|Win32
+		{60FC4BB5-5F73-435A-9D50-4481F19E639F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{60FC4BB5-5F73-435A-9D50-4481F19E639F}.Debug|Win32.Build.0 = Debug|Win32
+		{60FC4BB5-5F73-435A-9D50-4481F19E639F}.Release|Win32.ActiveCfg = Release|Win32
+		{60FC4BB5-5F73-435A-9D50-4481F19E639F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
