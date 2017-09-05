@@ -1,6 +1,7 @@
 #include "List.h"
 #include <stdio.h>
 #include <crtdbg.h>
+#include <iostream>
 
 SListNode* createListNode(int vValue)
 {
@@ -10,18 +11,28 @@ SListNode* createListNode(int vValue)
 	return pOneNode;
 }
 
-void connectListNode(SListNode* pNodeA, SListNode* pNodeB)
+void connectListNode(SListNode* vNodeA, SListNode* vNodeB)
 {
-	_ASSERT(pNodeA);
-	pNodeA->m_pNext = pNodeB;
+	_ASSERT(vNodeA);
+	vNodeA->m_pNext = vNodeB;
 }
 
-void destroyList(SListNode* pHead)
+void destroyList(SListNode* vHead)
 {
-	while (pHead != NULL)
+	while (vHead != NULL)
 	{
-		SListNode* pNode = pHead->m_pNext;
-		delete pHead;
-		pHead = pNode;
+		SListNode* pNode = vHead->m_pNext;
+		delete vHead;
+		vHead = pNode;
+	}
+}
+
+void printList(SListNode* vHead)
+{
+	//SListNode* 
+	while (vHead != NULL)
+	{
+		std::cout << vHead->m_Value << " ";
+		vHead = vHead->m_pNext;
 	}
 }

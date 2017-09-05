@@ -132,6 +132,8 @@ void Test(int n)
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	//PrintNumber("000");
+
     Test(1);
     Test(2);
     Test(3);

@@ -1,6 +1,6 @@
 #include <iostream>
 
-int numOfBit1(int n)
+int numOfBit1_01(int n)
 {
 	int Count = 0;
 	while (n)
@@ -12,7 +12,7 @@ int numOfBit1(int n)
 
 void Test(int number, unsigned int expected)
 {
-	int actual = numOfBit1(number);
+	int actual = numOfBit1_01(number);
 	if(actual == expected)
 		std::cout << "Test for " << number << "passed.\n";
 	else
