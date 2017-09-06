@@ -43,7 +43,7 @@ void printOneMatrixCircle(int** vMatrix, int vRow, int vCol, int vStartIndex)
 
 int main()
 {
-	int Row = 5, Col = 4;
+	int Row = 4, Col = 4;
 	int** ppArray = new int*[Row];
 	for (unsigned int i=0; i<Row; ++i)
 	{
@@ -60,11 +60,11 @@ int main()
 		}
 	}
 
-	Number = 0;
-	while (Row > Number * 2 && Col > Number * 2)
+	int Start = 0;
+	while (Row > Start * 2 && Col > Start * 2)
 	{
-		printOneMatrixCircle(ppArray, Row, Col, Number);
-		Number++;
+		printOneMatrixCircle(ppArray, Row, Col, Start);
+		Start++;
 	}
 
 	for (unsigned int i=0; i<Col; ++i)

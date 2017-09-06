@@ -1,9 +1,10 @@
 #include "../Utility/List.h"
 #include <iostream>
 
-SListNode* mergeList(SListNode* vListHeadA, SListNode* vListHeadB)
+//我最初写的： 合并链表时为每个node重新分配了内存  
+SListNode* mergeList_01(SListNode* vListHeadA, SListNode* vListHeadB)
 {
-	if (vListHeadA == NULL && vListHeadB == NULL)
+	if (vListHeadA == NULL && vListHeadB == NULL)  //此处处理特殊情况没有书上写得好！！！
 	{
 		return NULL;
 	}
@@ -23,6 +24,7 @@ SListNode* mergeList(SListNode* vListHeadA, SListNode* vListHeadB)
 	SListNode* pTempA = vListHeadA;
 	SListNode* pTempB = vListHeadB;
 
+	
 	while (pTempA && pTempB)
 	{
 		SListNode* pTempNode = new SListNode();
@@ -70,12 +72,89 @@ SListNode* mergeList(SListNode* vListHeadA, SListNode* vListHeadB)
 	return pNewHead;
 }
 
+//法二： 不重新分配内存
+SListNode* mergeList_02(SListNode* vListHeadA, SListNode* vListHeadB)
+{
+	if (vListHeadA == NULL)
+		return vListHeadB;
+	else if (vListHeadB == NULL)
+		return vListHeadA;
+
+	SListNode* pNewHead = NULL;
+	SListNode* pPreviusNode = NULL;
+	SListNode* pTempA = vListHeadA;
+	SListNode* pTempB = vListHeadB;
+
+	while (pTempA && pTempB)
+	{
+		SListNode* pTempNode = NULL;
+		if (pTempA->m_Value < pTempB->m_Value)
+		{
+			pTempNode = pTempA;
+			pTempA = pTempA->m_pNext;
+		}
+		else
+		{
+			pTempNode = pTempB;
+			pTempB = pTempB->m_pNext;
+		}
+
+		if (pNewHead == NULL)
+		{
+			pNewHead = pTempNode;
+			pPreviusNode = pTempNode;
+		}
+		else
+		{
+			pPreviusNode->m_pNext = pTempNode;
+			pPreviusNode = pPreviusNode->m_pNext;
+		}
+	}
+
+	if (pTempA)
+	{
+		pPreviusNode->m_pNext = pTempA;
+	}
+
+	if (pTempB)
+	{
+		pPreviusNode->m_pNext = pTempB;
+	}
+
+	return pNewHead;
+}
+
+//递归实现（书上的）
+SListNode* mergeList_03(SListNode* vListHeadA, SListNode* vListHeadB)
+{
+	if (vListHeadA == NULL)
+		return vListHeadB;
+	else if (vListHeadB == NULL)
+		return vListHeadA;
+
+	SListNode* pMergedHead = NULL;
+	if (vListHeadA->m_Value < vListHeadB->m_Value)
+	{
+		pMergedHead = vListHeadA;
+		pMergedHead->m_pNext = mergeList_03(vListHeadA->m_pNext, vListHeadB);
+	}
+	else
+	{
+		pMergedHead = vListHeadB;
+		pMergedHead->m_pNext = mergeList_03(vListHeadA, vListHeadB->m_pNext);
+	}
+
+	return pMergedHead;
+}
+
 void test(char* vTestName, SListNode* vHeadA, SListNode* vHeadB)
 {
 	std::cout << vTestName << " starts:\n";
-	SListNode* pRevHead = mergeList(vHeadA, vHeadB);
+	SListNode* pRevHead = mergeList_03(vHeadA, vHeadB);
 	printList(pRevHead);
 	std::cout << std::endl;
+
+	destroyList(pRevHead);
 }
 
 void test1()
@@ -96,9 +175,6 @@ void test1()
 	connectListNode(pNode6, pNode7);
 
 	test("test1", pNode1, pNode2);
-
-	destroyList(pNode1);
-	destroyList(pNode2);
 }
 
 void test2()
@@ -111,8 +187,6 @@ void test2()
 	connectListNode(pNode3, pNode4);
 
 	test("test2", pNode1, NULL);
-
-	destroyList(pNode1);
 }
 
 void test3()
@@ -133,9 +207,6 @@ void test3()
 	connectListNode(pNode6, pNode7);
 
 	test("test3", pNode1, pNode5);
-
-	destroyList(pNode1);
-	destroyList(pNode5);
 }
 
 void test4()

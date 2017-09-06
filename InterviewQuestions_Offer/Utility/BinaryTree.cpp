@@ -43,6 +43,8 @@ void destroyBinaryTree(SBinaryTreeNode* vRoot)
 //FUNCTION:
 void printBinaryTree(SBinaryTreeNode* vRoot)
 {
+	std::cout << std::endl;
+
 	if (vRoot == NULL)
 	{
 		std::cout << "The node is null.\n";

@@ -10,44 +10,39 @@ void installMemoryLeakDetector()
 #endif
 }
 
-bool splitArrayByData(int* vInputArray, int vLength, int vData, int& voSplitIndex)
-{
-	voSplitIndex = -1;
-	for (int i=0; i<vLength; ++i)
-	{
-		if (voSplitIndex == -1 && vInputArray[i] > vData)
-		{
-			voSplitIndex = i;
-			continue;;
-		}
-
-		if (voSplitIndex != -1 && vInputArray[i] < vData)
-		{
-			return false;
-		}
-	}
-
-	return true;
-}
-
 bool isRootLastTranverseBST(int* vArray, int vLength)
 {
 	if (vArray == NULL || vLength <= 0)
 	{
 		return false;
 	}
+
 	if (vLength <= 1)
 	{
 		return true;
 	}
 
-	int Root = vArray[vLength - 1];
+	int RootData = vArray[vLength - 1];
 	int SplitIndex = -1;
-	bool IsSplited = splitArrayByData(vArray, vLength - 1, Root, SplitIndex);
 
-	if (!IsSplited)
+	for (int i=0; i<vLength-1; ++i)
 	{
-		return false;
+		if (vArray[i] > RootData)
+		{
+			SplitIndex = i;
+			break;
+		}
+	}
+
+	if (SplitIndex > -1) //代表有右子树
+	{
+		for (int j=SplitIndex; j<vLength-1; ++j)
+		{
+			if (vArray[j] < RootData)
+			{
+				return false;
+			}
+		}
 	}
 
 	bool Left = true;
@@ -57,7 +52,7 @@ bool isRootLastTranverseBST(int* vArray, int vLength)
 	}
 
 	bool Right = true;
-	if (vLength - 1 - SplitIndex > 0)
+	if (SplitIndex >= 0)
 	{
 		Right = isRootLastTranverseBST(vArray + SplitIndex, vLength - 1 - SplitIndex);
 	}
