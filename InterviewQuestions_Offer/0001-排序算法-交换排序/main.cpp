@@ -82,15 +82,15 @@ void quickSort_2(int vArray[], int vLength)
 }
 
 //Todo:快排的实现函数还是用这个吧，，，正确的。。。
-void quickSort_3(int vArray[], int vLeft, int vRight)
+void quickSort_3(int vArray[], int vStartIndex, int vEndIndex)
 {
-	if (vLeft >= vRight)
+	if (vStartIndex >= vEndIndex)
 	{
 		return;
 	}
 
-	int i = vLeft, j = vRight;
-	int Temp = vArray[vLeft];
+	int i = vStartIndex, j = vEndIndex;
+	int Temp = vArray[vStartIndex];
 
 	while (i < j)
 	{
@@ -117,8 +117,8 @@ void quickSort_3(int vArray[], int vLeft, int vRight)
 
 	vArray[i] = Temp;
 
-	quickSort_3(vArray, vLeft, i - 1);
-	quickSort_3(vArray, i + 1, vRight);
+	quickSort_3(vArray, vStartIndex, i - 1);
+	quickSort_3(vArray, i + 1, vEndIndex);
 }
 
 //Todo: method4

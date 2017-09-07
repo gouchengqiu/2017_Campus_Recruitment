@@ -3,12 +3,30 @@
 
 void shellSort(int vDataArray[], int vLength)
 {
-	for (int Gap = vLength/2.0; Gap > 0; Gap/=2.0)
-	{
-		for (int k = 0; k < Gap; k++)
-		{
+	int Increse = 0;
+	//while (Increse <= vLength)
+	//{
+	//	Increse = 3 * Increse + 1;  //生成初始增量
+	//}
 
+	int IncrementArray[] = {3, 2, 1};
+	int Times = 0;
+	Increse = IncrementArray[0];
+	while (Increse >= 1)
+	{
+		for (int i=Increse; i<vLength; ++i)
+		{
+			int j = i -Increse;
+			int Temp = vDataArray[i];
+			while (j >= 0 && vDataArray[j] > Temp)
+			{
+				vDataArray[j + Increse] = vDataArray[j];
+				j = j - Increse;
+			}
+			vDataArray[j + Increse] = Temp;
 		}
+		//Increse = (Increse - 1) / 3;
+		Increse = IncrementArray[++Times];
 	}
 }
 
@@ -16,6 +34,6 @@ void shellSort(int vDataArray[], int vLength)
 
 int main()
 {
-	//int Data[] = {8, 9, 1, 7, 2, 3, 5, 4, 6, 0};
-	//shellSort(Data, 10);
+	int Data[] = {49, 38, 65, 97, 76, 13, 27, 49, 55, 4};
+	shellSort(Data, 10);
 }

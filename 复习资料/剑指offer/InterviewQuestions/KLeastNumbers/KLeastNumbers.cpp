@@ -40,35 +40,35 @@ void GetLeastNumbers_Solution1(int* input, int n, int* output, int k)
         output[i] = input[i];
 }
 
-// ====================方法2====================
-typedef multiset<int, greater<int> >            intSet;
-typedef multiset<int, greater<int> >::iterator  setIterator;
-
-void GetLeastNumbers_Solution2(const vector<int>& data, intSet& leastNumbers, int k)
-{
-    leastNumbers.clear();
-
-    if(k < 1 || data.size() < k)
-        return;
-
-    vector<int>::const_iterator iter = data.begin();
-    for(; iter != data.end(); ++ iter)
-    {
-        if((leastNumbers.size()) < k)
-            leastNumbers.insert(*iter);
-
-        else
-        {
-            setIterator iterGreatest = leastNumbers.begin();
-
-            if(*iter < *(leastNumbers.begin()))
-            {
-                leastNumbers.erase(iterGreatest);
-                leastNumbers.insert(*iter);
-            }
-        }
-    }
-}
+//// ====================方法2====================
+//typedef multiset<int, greater<int> >            intSet;
+//typedef multiset<int, greater<int> >::iterator  setIterator;
+//
+//void GetLeastNumbers_Solution2(const vector<int>& data, intSet& leastNumbers, int k)
+//{
+//    leastNumbers.clear();
+//
+//    if(k < 1 || data.size() < k)
+//        return;
+//
+//    vector<int>::const_iterator iter = data.begin();
+//    for(; iter != data.end(); ++ iter)
+//    {
+//        if((leastNumbers.size()) < k)
+//            leastNumbers.insert(*iter);
+//
+//        else
+//        {
+//            setIterator iterGreatest = leastNumbers.begin();
+//
+//            if(*iter < *(leastNumbers.begin()))
+//            {
+//                leastNumbers.erase(iterGreatest);
+//                leastNumbers.insert(*iter);
+//            }
+//        }
+//    }
+//}
 
 // ====================测试代码====================
 void Test(char* testName, int* data, int n, int* expectedResult, int k)
@@ -102,13 +102,13 @@ void Test(char* testName, int* data, int n, int* expectedResult, int k)
 
     delete[] output;
 
-    printf("Result for solution2:\n");
-    intSet leastNumbers;
-    GetLeastNumbers_Solution2(vectorData, leastNumbers, k);
-    printf("The actual output numbers are:\n");
-    for(setIterator iter = leastNumbers.begin(); iter != leastNumbers.end(); ++iter)
-        printf("%d\t", *iter);
-    printf("\n\n");
+    //printf("Result for solution2:\n");
+    //intSet leastNumbers;
+    //GetLeastNumbers_Solution2(vectorData, leastNumbers, k);
+    //printf("The actual output numbers are:\n");
+    //for(setIterator iter = leastNumbers.begin(); iter != leastNumbers.end(); ++iter)
+    //    printf("%d\t", *iter);
+    //printf("\n\n");
 }
 
 // k小于数组的长度

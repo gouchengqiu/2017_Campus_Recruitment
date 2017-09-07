@@ -173,6 +173,9 @@ int _tmain(int argc, _TCHAR* argv[])
     Test5();
     Test6();
 
+	//int Test[] = {11, 2, 3, 14, 5, 6, 17, 8};
+	//int index = Partition(Test, 8, 0, 7);
+
     return 0;
 }
 
