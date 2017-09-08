@@ -177,6 +177,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6027_二叉搜索树与双�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6030_最小的k个数", "6030_最小的k个数\6030_最小的k个数.vcxproj", "{CFE4F2A0-293C-4309-9859-8E080E2ACE9E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9011_京东秋招_01", "9011_京东秋招_01\9011_京东秋招_01.vcxproj", "{BFA30A12-616C-45D9-BFC3-2709D1C5F946}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9011_京东秋招_02", "9011_京东秋招_02\9011_京东秋招_02.vcxproj", "{7742AB85-77CB-4CC5-85F7-3B7861D8D80D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -535,6 +539,14 @@ Global
 		{CFE4F2A0-293C-4309-9859-8E080E2ACE9E}.Debug|Win32.Build.0 = Debug|Win32
 		{CFE4F2A0-293C-4309-9859-8E080E2ACE9E}.Release|Win32.ActiveCfg = Release|Win32
 		{CFE4F2A0-293C-4309-9859-8E080E2ACE9E}.Release|Win32.Build.0 = Release|Win32
+		{BFA30A12-616C-45D9-BFC3-2709D1C5F946}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BFA30A12-616C-45D9-BFC3-2709D1C5F946}.Debug|Win32.Build.0 = Debug|Win32
+		{BFA30A12-616C-45D9-BFC3-2709D1C5F946}.Release|Win32.ActiveCfg = Release|Win32
+		{BFA30A12-616C-45D9-BFC3-2709D1C5F946}.Release|Win32.Build.0 = Release|Win32
+		{7742AB85-77CB-4CC5-85F7-3B7861D8D80D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7742AB85-77CB-4CC5-85F7-3B7861D8D80D}.Debug|Win32.Build.0 = Debug|Win32
+		{7742AB85-77CB-4CC5-85F7-3B7861D8D80D}.Release|Win32.ActiveCfg = Release|Win32
+		{7742AB85-77CB-4CC5-85F7-3B7861D8D80D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
