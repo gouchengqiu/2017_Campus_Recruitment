@@ -1,5 +1,6 @@
 #include "../Utility/BinaryTree.h"
 #include <iostream>
+#include <stack>
 
 //********************************************************************
 //FUNCTION:后序遍历
@@ -30,6 +31,61 @@ void preorderTraverse(const SBinaryTreeNode* vRoot)
 }
 
 //********************************************************************
+//FUNCTION:先序遍历 非递归
+void preorderTraverse_02(SBinaryTreeNode* vRoot)
+{
+	std::stack<SBinaryTreeNode*> TempStack;
+	SBinaryTreeNode* pCurrentNode = vRoot;
+
+	while (pCurrentNode || !TempStack.empty())
+	{
+		if (pCurrentNode)
+		{
+			std::cout << pCurrentNode->m_Value << " ";
+			TempStack.push(pCurrentNode);
+			pCurrentNode = pCurrentNode->m_pLeft;
+		}
+		else
+		{
+			if (TempStack.size() > 0)
+			{
+				SBinaryTreeNode* pTempNode = TempStack.top();
+				TempStack.pop();
+				pCurrentNode = pTempNode->m_pRight;
+			}
+		}
+	}
+}
+
+//********************************************************************
+//FUNCTION:中序遍历 非递归实现
+void inorderTraverse_02(SBinaryTreeNode* vRoot)
+{
+	std::stack<SBinaryTreeNode*> TempStack;
+	SBinaryTreeNode* pCurrentNode = vRoot;
+
+	while (pCurrentNode || !TempStack.empty())
+	{
+		if (pCurrentNode)
+		{
+			TempStack.push(pCurrentNode);
+			pCurrentNode = pCurrentNode->m_pLeft;
+		}
+		else
+		{
+			if (!TempStack.empty())
+			{
+				SBinaryTreeNode* pTempNode = TempStack.top();
+				std::cout << pTempNode->m_Value << " ";
+				TempStack.pop();
+				pCurrentNode = pTempNode->m_pRight;
+			}
+		}
+
+	}
+}
+
+//********************************************************************
 //FUNCTION:中序遍历
 void inorderTraverse(const SBinaryTreeNode* vRoot)
 {
@@ -52,9 +108,13 @@ void test(char* vTestName, const SBinaryTreeNode* vRoot)
 	
 	std::cout << std::endl << "PreOrder traverse: \n";
 	preorderTraverse(vRoot);
+	std::cout << std::endl << "PreOrder traverse(no recursive):\n";
+	preorderTraverse_02(const_cast<SBinaryTreeNode*>(vRoot));
 
 	std::cout << std::endl << "InOrder traverse: \n";
 	inorderTraverse(vRoot);
+	std::cout << std::endl << "InOrder traverse(no recursive):\n";
+	inorderTraverse_02(const_cast<SBinaryTreeNode*>(vRoot));
 
 	std::cout << std::endl << vTestName << " end.\n";
 }
@@ -114,11 +174,11 @@ void test5()
 
 int main()
 {
-	test1();
-	test2();
+	//test1();
+	//test2();
 	test3();
-	test4();
-	test5();
+	//test4();
+	//test5();
 
 	return 0;
 }
