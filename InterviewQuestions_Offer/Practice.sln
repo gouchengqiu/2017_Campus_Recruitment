@@ -181,6 +181,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9011_京东秋招_01", "901
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9011_京东秋招_02", "9011_京东秋招_02\9011_京东秋招_02.vcxproj", "{7742AB85-77CB-4CC5-85F7-3B7861D8D80D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7031_网易互联网_秋招01", "7031_网易互联网_秋招01\7031_网易互联网_秋招01.vcxproj", "{830263ED-A4F8-44AE-A0BE-99CE3E3A4D78}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7031_网易互联网_秋招02", "7031_网易互联网_秋招02\7031_网易互联网_秋招02.vcxproj", "{DE4B273E-68C1-4EA7-84CC-593045152D9E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7031_网易互联网_秋招03", "7031_网易互联网_秋招03\7031_网易互联网_秋招03.vcxproj", "{4E85D6AD-F233-4DAB-892F-9651F1043333}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -547,6 +553,18 @@ Global
 		{7742AB85-77CB-4CC5-85F7-3B7861D8D80D}.Debug|Win32.Build.0 = Debug|Win32
 		{7742AB85-77CB-4CC5-85F7-3B7861D8D80D}.Release|Win32.ActiveCfg = Release|Win32
 		{7742AB85-77CB-4CC5-85F7-3B7861D8D80D}.Release|Win32.Build.0 = Release|Win32
+		{830263ED-A4F8-44AE-A0BE-99CE3E3A4D78}.Debug|Win32.ActiveCfg = Debug|Win32
+		{830263ED-A4F8-44AE-A0BE-99CE3E3A4D78}.Debug|Win32.Build.0 = Debug|Win32
+		{830263ED-A4F8-44AE-A0BE-99CE3E3A4D78}.Release|Win32.ActiveCfg = Release|Win32
+		{830263ED-A4F8-44AE-A0BE-99CE3E3A4D78}.Release|Win32.Build.0 = Release|Win32
+		{DE4B273E-68C1-4EA7-84CC-593045152D9E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE4B273E-68C1-4EA7-84CC-593045152D9E}.Debug|Win32.Build.0 = Debug|Win32
+		{DE4B273E-68C1-4EA7-84CC-593045152D9E}.Release|Win32.ActiveCfg = Release|Win32
+		{DE4B273E-68C1-4EA7-84CC-593045152D9E}.Release|Win32.Build.0 = Release|Win32
+		{4E85D6AD-F233-4DAB-892F-9651F1043333}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4E85D6AD-F233-4DAB-892F-9651F1043333}.Debug|Win32.Build.0 = Debug|Win32
+		{4E85D6AD-F233-4DAB-892F-9651F1043333}.Release|Win32.ActiveCfg = Release|Win32
+		{4E85D6AD-F233-4DAB-892F-9651F1043333}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
