@@ -187,6 +187,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7031_网易互联网_秋招
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7031_网易互联网_秋招03", "7031_网易互联网_秋招03\7031_网易互联网_秋招03.vcxproj", "{4E85D6AD-F233-4DAB-892F-9651F1043333}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9012_海康威视秋招_01", "9012_海康威视秋招_01\9012_海康威视秋招_01.vcxproj", "{D3A0D538-8E82-4D59-9019-C175A15DEB89}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9012_海康威视秋招_02", "9012_海康威视秋招_02\9012_海康威视秋招_02.vcxproj", "{C362BC09-C60D-46BF-AD9E-B8ACBABE05D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -565,6 +569,14 @@ Global
 		{4E85D6AD-F233-4DAB-892F-9651F1043333}.Debug|Win32.Build.0 = Debug|Win32
 		{4E85D6AD-F233-4DAB-892F-9651F1043333}.Release|Win32.ActiveCfg = Release|Win32
 		{4E85D6AD-F233-4DAB-892F-9651F1043333}.Release|Win32.Build.0 = Release|Win32
+		{D3A0D538-8E82-4D59-9019-C175A15DEB89}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D3A0D538-8E82-4D59-9019-C175A15DEB89}.Debug|Win32.Build.0 = Debug|Win32
+		{D3A0D538-8E82-4D59-9019-C175A15DEB89}.Release|Win32.ActiveCfg = Release|Win32
+		{D3A0D538-8E82-4D59-9019-C175A15DEB89}.Release|Win32.Build.0 = Release|Win32
+		{C362BC09-C60D-46BF-AD9E-B8ACBABE05D1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C362BC09-C60D-46BF-AD9E-B8ACBABE05D1}.Debug|Win32.Build.0 = Debug|Win32
+		{C362BC09-C60D-46BF-AD9E-B8ACBABE05D1}.Release|Win32.ActiveCfg = Release|Win32
+		{C362BC09-C60D-46BF-AD9E-B8ACBABE05D1}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

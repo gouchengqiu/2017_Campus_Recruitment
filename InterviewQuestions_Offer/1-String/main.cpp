@@ -52,7 +52,7 @@ double Round(double dVal, short iPlaces)
 
 	dRetval=dVal;
 
-	dRetval+=(5.0/pow(10.0,iPlaces+1.0));
+	dRetval+=(5.0/pow(10.0,iPlaces + 1.0));
 
 	dRetval*=pow(10.0,iPlaces);
 
