@@ -1,6 +1,24 @@
 //http://www.cnblogs.com/chengxiao/p/6104371.html
 #include <iostream>
 
+void insert(int vDataArray[], int vLength)
+{
+	if (vDataArray == NULL || vLength <= 1)
+		return;
+	 
+	for (int i=1; i<vLength; ++i)
+	{
+		int CurrentIndex = i;
+		while (CurrentIndex > 0 && vDataArray[CurrentIndex] < vDataArray[CurrentIndex-1])
+		{
+			int Temp = vDataArray[CurrentIndex-1];;
+			vDataArray[CurrentIndex-1] = vDataArray[CurrentIndex];
+			vDataArray[CurrentIndex] = Temp;
+			CurrentIndex--;
+		}
+	}
+}
+
 void shellSort(int vDataArray[], int vLength)
 {
 	int Increse = 0;
@@ -35,5 +53,8 @@ void shellSort(int vDataArray[], int vLength)
 int main()
 {
 	int Data[] = {49, 38, 65, 97, 76, 13, 27, 49, 55, 4};
-	shellSort(Data, 10);
+	//shellSort(Data, 10);
+	insert(Data, 10);
+
+	return 0;
 }

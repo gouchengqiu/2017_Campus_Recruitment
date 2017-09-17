@@ -5,6 +5,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1000_科大讯飞_01", "Pro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1000_科大讯飞_02", "1000_科大讯飞_02\1000_科大讯飞_02.vcxproj", "{F4ED55D5-6CA1-4C14-8EC2-E77E136200FF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1001_欢聚时代_01", "1001_欢聚时代_01\1001_欢聚时代_01.vcxproj", "{753F6F73-2A66-42D0-BD51-DFD41F27D3A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +21,10 @@ Global
 		{F4ED55D5-6CA1-4C14-8EC2-E77E136200FF}.Debug|Win32.Build.0 = Debug|Win32
 		{F4ED55D5-6CA1-4C14-8EC2-E77E136200FF}.Release|Win32.ActiveCfg = Release|Win32
 		{F4ED55D5-6CA1-4C14-8EC2-E77E136200FF}.Release|Win32.Build.0 = Release|Win32
+		{753F6F73-2A66-42D0-BD51-DFD41F27D3A5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{753F6F73-2A66-42D0-BD51-DFD41F27D3A5}.Debug|Win32.Build.0 = Debug|Win32
+		{753F6F73-2A66-42D0-BD51-DFD41F27D3A5}.Release|Win32.ActiveCfg = Release|Win32
+		{753F6F73-2A66-42D0-BD51-DFD41F27D3A5}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
