@@ -2,6 +2,8 @@
 #include <iostream>
 #include <stack>
 
+//非递归实现   http://blog.csdn.net/ns_code/article/details/12977901/
+
 //********************************************************************
 //FUNCTION:后序遍历
 void postorderTraverse(const SBinaryTreeNode* vRoot)
@@ -28,6 +30,36 @@ void preorderTraverse(const SBinaryTreeNode* vRoot)
 	std::cout << vRoot->m_Value << " ";
 	preorderTraverse(vRoot->m_pLeft);
 	preorderTraverse(vRoot->m_pRight);
+}
+
+//********************************************************************
+//FUNCTION:后序遍历 非递归
+void postOrderTranverse(SBinaryTreeNode* vRoot)
+{
+	if (!vRoot) {return;}
+
+	std::stack<SBinaryTreeNode*> NodeStack;
+	SBinaryTreeNode* pCurrent = NULL;
+	SBinaryTreeNode* pPrevius = NULL;
+
+	NodeStack.push(vRoot);
+
+	while (!NodeStack.empty())
+	{
+		pCurrent = NodeStack.top();
+		if ((pCurrent->m_pLeft == NULL && pCurrent->m_pRight == NULL) || (pCurrent->m_pLeft == pPrevius || pCurrent->m_pRight == pPrevius))
+		{
+			//如果当前节点没有左右孩纸，或者有左孩子或右孩子，但已被访问输出，则直接输出改节点，并将其设为上一个访问节点。
+			std::cout << pCurrent->m_Value << " ";
+			NodeStack.pop();
+			pPrevius = pCurrent;
+		}
+		else
+		{    //若不满足上面两种弄过情况，则将其右孩子  左孩子一次入栈
+			if (pCurrent->m_pRight) {NodeStack.push(pCurrent->m_pRight);}
+			if (pCurrent->m_pLeft)  {NodeStack.push(pCurrent->m_pLeft);}
+		}
+	}
 }
 
 //********************************************************************

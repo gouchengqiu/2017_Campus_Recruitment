@@ -34,7 +34,7 @@ void shellSort(int vDataArray[], int vLength)
 	{
 		for (int i=Increse; i<vLength; ++i)
 		{
-			int j = i -Increse;
+			int j = i - Increse;
 			int Temp = vDataArray[i];
 			while (j >= 0 && vDataArray[j] > Temp)
 			{

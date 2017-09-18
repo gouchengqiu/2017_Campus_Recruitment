@@ -1,6 +1,8 @@
 #include <vector>
 #include <iostream>
 
+//https://www.2cto.com/kf/201603/494797.html
+
 void combination(char* vStr, int vNumber, std::vector<char>& voResult)
 {
 	if (vNumber == 0)
