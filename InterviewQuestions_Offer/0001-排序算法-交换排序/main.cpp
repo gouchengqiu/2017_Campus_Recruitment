@@ -232,7 +232,9 @@ int main()
 	//{
 	//	std::cout << Data[i] << " ";
 	//}
-
+	char* p = nullptr;
+	char a[10] = {' '};
+	p = &a[0];
 	system("pause");
 
 	return 0;
