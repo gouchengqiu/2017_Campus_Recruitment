@@ -191,6 +191,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9012_海康威视秋招_01"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9012_海康威视秋招_02", "9012_海康威视秋招_02\9012_海康威视秋招_02.vcxproj", "{C362BC09-C60D-46BF-AD9E-B8ACBABE05D1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0000-5-找第K大的元素", "0000-5-找第K大的元素\0000-5-找第K大的元素.vcxproj", "{7CD3CA06-E922-4855-BCCB-FA6997EC696A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -577,6 +579,10 @@ Global
 		{C362BC09-C60D-46BF-AD9E-B8ACBABE05D1}.Debug|Win32.Build.0 = Debug|Win32
 		{C362BC09-C60D-46BF-AD9E-B8ACBABE05D1}.Release|Win32.ActiveCfg = Release|Win32
 		{C362BC09-C60D-46BF-AD9E-B8ACBABE05D1}.Release|Win32.Build.0 = Release|Win32
+		{7CD3CA06-E922-4855-BCCB-FA6997EC696A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7CD3CA06-E922-4855-BCCB-FA6997EC696A}.Debug|Win32.Build.0 = Debug|Win32
+		{7CD3CA06-E922-4855-BCCB-FA6997EC696A}.Release|Win32.ActiveCfg = Release|Win32
+		{7CD3CA06-E922-4855-BCCB-FA6997EC696A}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
