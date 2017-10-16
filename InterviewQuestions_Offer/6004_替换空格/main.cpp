@@ -77,9 +77,12 @@ void test(char* vTestName, char* vString, int vStrMaxLength, char* vExpectedStr)
 
 void test1()
 {
+	//const int Length = 100;
+	//char TestStr1[Length] = "we are happy.";
+	//test("test1", TestStr1, Length, "we%20are%20happy.");
 	const int Length = 100;
-	char TestStr1[Length] = "we are happy.";
-	test("test1", TestStr1, Length, "we%20are%20happy.");
+	char TestStr1[Length] = "Hello World";
+	test("test1", TestStr1, Length, "Hello%20World");
 }
 
 void test2()
